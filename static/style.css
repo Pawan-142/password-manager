@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* Auth Pages */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.auth-box {
+    background: #111;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.auth-box h1 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.subtitle {
+    color: #999;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.error-message {
+    background: #2a1a1a;
+    color: #ff6b6b;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 16px;
+}
+
+.auth-form label {
+    display: block;
+    color: #ccc;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.password-hint {
+    display: block;
+    margin-top: 4px;
+    color: #666;
+    font-size: 12px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-top: 2px;
+}
+
+.checkbox-group label {
+    color: #999;
+    font-size: 13px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #e8e8e8;
+}
+
+.switch-auth {
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+.switch-auth a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.switch-auth a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-container {
+    min-height: 100vh;
+}
+
+.navbar {
+    background: #111;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-email {
+    color: #999;
+    font-size: 14px;
+}
+
+.btn-logout {
+    padding: 8px 16px;
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #333;
+}
+
+.btn-logout:hover {
+    background: #222;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.add-password-section {
+    background: #111;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    margin-bottom: 32px;
+}
+
+.add-password-section h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.password-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.password-form .form-group {
+    margin-bottom: 16px;
+}
+
+.password-form label {
+    display: block;
+    color: #ccc;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.password-form input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.password-form input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.btn-add {
+    padding: 10px 24px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background: #e8e8e8;
+}
+
+.passwords-section h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.passwords-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.password-card {
+    background: #111;
+    border-radius: 8px;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 16px;
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+.card-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.info-row .label {
+    color: #999;
+    font-size: 13px;
+}
+
+.info-row .value {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.password-text {
+    font-family: monospace;
+}
+
+.card-footer {
+    padding: 0 16px 16px 16px;
+}
+
+.btn-delete {
+    width: 100%;
+    padding: 8px;
+    background: #1a1a1a;
+    color: #999;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+.btn-delete:hover {
+    background: #222;
+    color: #fff;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #111;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.empty-state p {
+    color: #999;
+    font-size: 15px;
+}
+
+.empty-subtitle {
+    color: #666;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .password-form .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .passwords-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .nav-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
